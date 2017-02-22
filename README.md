@@ -9,3 +9,15 @@ in your build.gradle (Module)
 ```groovy
 compile 'me.ngallazzi.android.enlightinglayout:enlightinglayout:1.0.0'
 ```
+
+in your build.gradle (Project)
+```groovy
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url  "http://dl.bintray.com/ngallazzi/maven"
+        }
+    }
+}
+```
