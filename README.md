@@ -21,3 +21,14 @@ allprojects {
     }
 }
 ```
+in your layout file
+```groovy
+<com.ngallazzi.enlightinglayout.EnlightingLayout
+	android:id="@+id/myEnlightingLayoutK"
+	android:layout_width="96dp"
+	android:layout_height="96dp"
+	custom:enlightedColor="#E91E63"
+	custom:normalIcon="@drawable/your_drawable"
+	custom:animationDurationInMillis="1500"
+	custom:text="your_text">
+</com.ngallazzi.enlightinglayout.EnlightingLayout>
