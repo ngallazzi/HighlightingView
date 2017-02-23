@@ -32,3 +32,14 @@ in your layout file
 	custom:animationDurationInMillis="1500"
 	custom:text="your_text">
 </com.ngallazzi.enlightinglayout.EnlightingLayout>
+
+###
+
+Options
+
+- custom **enlighted color**: "custom:enlightedColor"
+- custom **enlighted text color**: "custom:enlightedTextColor"
+- custom **normal status icon**: "custom:normalIcon"
+- custom **enlighted status icon**: "custom:enlightedIcon"
+- custom **animation duration**: "custom:animationDurationInMillis"
+- custom **text**: "custom:text"
