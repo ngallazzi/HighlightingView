@@ -1,5 +1,5 @@
 # EnlightingLayout
-A simple layout working as a switch on-off button - Thanks to @DreaminginCodeZH for Material Progress bar
+A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
 
 [![gif](https://github.com/ngallazzi/EnlightingLayout/blob/master/demo.gif)
@@ -25,7 +25,7 @@ allprojects {
 in your layout file (.xml)
 ```groovy
 <com.ngallazzi.enlightinglayout.EnlightingLayout
-	android:id="@+id/myEnlightingLayoutK"
+	android:id="@+id/myEnlightingLayout"
 	android:layout_width="96dp"
 	android:layout_height="96dp"
 	custom:enlightedColor="#E91E63"
