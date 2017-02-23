@@ -33,13 +33,19 @@ in your layout file
 	custom:text="your_text">
 </com.ngallazzi.enlightinglayout.EnlightingLayout>
 
-###
+#Options
 
-Options
-
-- custom **enlighted color**: "custom:enlightedColor"
-- custom **enlighted text color**: "custom:enlightedTextColor"
-- custom **normal status icon**: "custom:normalIcon"
-- custom **enlighted status icon**: "custom:enlightedIcon"
-- custom **animation duration**: "custom:animationDurationInMillis"
-- custom **text**: "custom:text"
+ - custom **enlighted color**: "custom:enlightedColor"
+ - custom **enlighted text color**: "custom:enlightedTextColor"
+ - custom **normal status icon**: "custom:normalIcon"
+ - custom **enlighted status icon**: "custom:enlightedIcon"
+ - custom **animation duration**: "custom:animationDurationInMillis"
+ - custom **text**: "custom:text"
+ - 
+# Public Methods
+ - public void setEnlighted (Boolean status)
+ - public void setText (String text)
+ - public void setImage(Drawable drawable)
+ - public boolean isEnlighted()
+ - public void showProgressBar()
+ - public void hideProgressBar()
