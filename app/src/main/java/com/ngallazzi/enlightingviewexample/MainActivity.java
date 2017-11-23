@@ -21,21 +21,6 @@ public class MainActivity extends AppCompatActivity {
         myEnlightingLayoutB = (EnlightingLayout) findViewById(R.id.myEnlightingLayoutB);
         myEnlightingLayoutG = (EnlightingLayout) findViewById(R.id.myEnlightingLayoutG);
         myEnlightingLayoutT = (EnlightingLayout) findViewById(R.id.myEnlightingLayoutT);
-        View.OnClickListener clickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EnlightingLayout myView = (EnlightingLayout) v;
-                if (!myView.isEnlighted()){
-                    myView.setEnlighted(true);
-                }else{
-                    myView.setEnlighted(false);
-                }
-            }
-        };
-        myEnlightingLayoutK.setOnClickListener(clickListener);
-        myEnlightingLayoutB.setOnClickListener(clickListener);
-        myEnlightingLayoutG.setOnClickListener(clickListener);
-        myEnlightingLayoutT.setOnClickListener(clickListener);
 
         TimerTask timerTask = new ShowProgressBarTask();
         Timer timer = new Timer(true);

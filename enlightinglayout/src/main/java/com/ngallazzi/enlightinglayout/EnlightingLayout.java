@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -18,7 +19,7 @@ import android.widget.TextView;
  * Created by Nicola on 2016-11-08.
  */
 
-public class EnlightingLayout extends LinearLayout {
+public class EnlightingLayout extends LinearLayout implements View.OnClickListener {
     private static final String TAG = EnlightingLayout.class.getSimpleName();
     private final int DEFAULT_ANIMATION_DURATION = 700;
 
@@ -63,6 +64,7 @@ public class EnlightingLayout extends LinearLayout {
 
     private void init() {
         inflate(getContext(), R.layout.enlighting_layout, this);
+        setOnClickListener(this);
         llEnlighting = (LinearLayout) findViewById(R.id.llEnlighting);
         ivEnlighting = (ImageView) findViewById(R.id.ivEnlighting);
         tvEnlighting = (TextView) findViewById(R.id.tvEnlighting);
@@ -121,4 +123,14 @@ public class EnlightingLayout extends LinearLayout {
     public void hideProgressBar(){
         mPbStatus.setVisibility(INVISIBLE);
     }
+
+    @Override
+    public void onClick(View v) {
+        if (!isEnlighted()){
+            setEnlighted(true);
+        }else{
+            setEnlighted(false);
+        }
+    }
+
 }
