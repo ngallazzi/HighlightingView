@@ -2,9 +2,9 @@
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
 ![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png)
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png)
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173508.png)
+![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png | width=200)
+![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png | width=200)
+![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173508.png | width=200)
 
 # Usage
 
