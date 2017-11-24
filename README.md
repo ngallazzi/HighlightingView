@@ -3,11 +3,11 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 
 ![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
 <br>
-<a href="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png">
+<a href="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png" style="float:left; margin-right:20px">
 	<img src="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png" width="300" >
 </a>
 
-<a href="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png">
+<a href="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png" style="float:left">
 	<img src="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png" width="300" >
 </a>
 
