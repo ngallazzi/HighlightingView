@@ -3,7 +3,7 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 
 ![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
 <a href="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png">
-	<img src="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png" align="left" height="48" width="48" >
+	<img src="https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png" width="200" >
 </a>
 
 
