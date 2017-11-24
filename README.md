@@ -5,10 +5,7 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 <br>
 <br>
 ![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png)
-<br>
-<br>
 ![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png)
-<br>
 <br>
 ![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173508.png)
 
