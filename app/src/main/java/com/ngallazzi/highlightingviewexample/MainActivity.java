@@ -22,8 +22,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (myEnlightingLayout.isHighlighted()){
                     myEnlightingLayout.setHighlighted(false);
+                    myEnlightingLayout.setBottomText("Off");
                 }else{
                     myEnlightingLayout.setHighlighted(true);
+                    myEnlightingLayout.setBottomText("On");
                 }
             }
         });
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (myEnlightingLayoutWithProgress.isHighlighted()){
                     myEnlightingLayoutWithProgress.setHighlighted(false);
+                    myEnlightingLayoutWithProgress.setBottomText("Off");
                 }else{
                     new DownloadFilesTask().execute();
                 }
@@ -59,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Long result) {
             myEnlightingLayoutWithProgress.hideProgressBar();
             myEnlightingLayoutWithProgress.setHighlighted(true);
+            myEnlightingLayoutWithProgress.setBottomText("On");
         }
     }
 }
