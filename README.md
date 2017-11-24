@@ -1,8 +1,7 @@
 # EnlightingLayout
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
-
-[![gif](https://github.com/ngallazzi/EnlightingLayout/blob/master/demo.gif)
+[![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
 
 # Usage
 
@@ -25,19 +24,19 @@ allprojects {
 in your layout file (.xml)
 ```groovy
 <com.ngallazzi.highlightingview.HighlightingView
-            android:id="@+id/myEnlightingLayoutK"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_margin="20dp"
-            custom:idleBackgroundColor="#FFFFFF"
-            custom:enlightedBackgroundColor="#4CAF50"
-            custom:middleText="Computer"
-            custom:middleTextColor="#F44336"
-            custom:icon="@drawable/ic_computer_black_24dp"
-            custom:animationDurationInMillis="200"
-            custom:bottomText="Off"
-            custom:bottomTextColor="#A3000000">
-        </com.ngallazzi.highlightingview.HighlightingView>
+	android:id="@+id/myEnlightingLayoutK"
+	android:layout_width="150dp"
+	android:layout_height="150dp"
+	android:layout_margin="20dp"
+	custom:idleBackgroundColor="#FFFFFF"
+	custom:enlightedBackgroundColor="#4CAF50"
+	custom:middleText="Computer"
+	custom:middleTextColor="#F44336"
+	custom:icon="@drawable/ic_computer_black_24dp"
+	custom:animationDurationInMillis="200"
+	custom:bottomText="Off"
+	custom:bottomTextColor="#A3000000">
+</com.ngallazzi.highlightingview.HighlightingView>
 ```
 # Options
 
