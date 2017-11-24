@@ -6,55 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ababab"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ngallazzi.enlightingviewexample.MainActivity"
+    tools:context="com.ngallazzi.highlightingviewexample.MainActivity"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <com.ngallazzi.enlightinglayout.EnlightingLayout
+        <com.ngallazzi.highlightingview.HighlightingView
             android:id="@+id/myEnlightingLayoutK"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            custom:enlightedColor="#E91E63"
-            custom:normalIcon="@drawable/kitchen"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            custom:idleBackgroundColor="#FFFFFF"
+            custom:enlightedBackgroundColor="#00B460"
+            custom:middleText="Awesome"
+            custom:middleTextColor="#7A5DBE"
+            custom:icon="@drawable/ic_screen"
+            custom:animationDurationInMillis="200"
+            custom:bottomText="screen"
+            custom:bottomTextColor="#A3000000">
+        </com.ngallazzi.highlightingview.HighlightingView>
+
+        <com.ngallazzi.highlightingview.HighlightingView
+            android:id="@+id/myEnlightingLayoutWithProgress"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            custom:idleBackgroundColor="#FFFFFF"
+            custom:enlightedBackgroundColor="#FFF300"
+            custom:middleText="Pale"
+            custom:middleTextColor="#F6D10D"
+            custom:icon="@drawable/ic_sun"
             custom:animationDurationInMillis="1500"
-            custom:text="kitchen">
-        </com.ngallazzi.enlightinglayout.EnlightingLayout>
-        <com.ngallazzi.enlightinglayout.EnlightingLayout
-            android:id="@+id/myEnlightingLayoutB"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            custom:enlightedColor="#9C27B0"
-            custom:normalIcon="@drawable/bedroom"
-            custom:animationDurationInMillis="1500"
-            custom:text="bedroom">
-        </com.ngallazzi.enlightinglayout.EnlightingLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.ngallazzi.enlightinglayout.EnlightingLayout
-            android:id="@+id/myEnlightingLayoutG"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            custom:enlightedColor="#673AB7"
-            custom:enlightedTextColor="#FAFAFA"
-            custom:normalIcon="@drawable/garage"
-            custom:animationDurationInMillis="1500"
-            custom:text="garage">
-        </com.ngallazzi.enlightinglayout.EnlightingLayout>
-        <com.ngallazzi.enlightinglayout.EnlightingLayout
-            android:id="@+id/myEnlightingLayoutT"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            custom:enlightedColor="#3F51B5"
-            custom:enlightedTextColor="#FAFAFA"
-            custom:normalIcon="@drawable/toilet"
-            custom:animationDurationInMillis="1500"
-            custom:text="toilet">
-        </com.ngallazzi.enlightinglayout.EnlightingLayout>
+            custom:bottomText="sun"
+            custom:bottomTextColor="#212121">
+        </com.ngallazzi.highlightingview.HighlightingView>
     </LinearLayout>
 </LinearLayout>

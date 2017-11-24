@@ -1,1 +1,1 @@
-include ':app', ':enlightinglayout'
+include ':app', ':highlightingView'

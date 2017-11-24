@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HighlightingView">
+        <attr name="icon" format="reference" />
+        <attr name="idleBackgroundColor"  format="color" />
+        <attr name="middleText" format="string" />
+        <attr name="middleTextColor"  format="color" />
+        <attr name="bottomTextColor"  format="color" />
+        <attr name="bottomText" format="string" />
+        <attr name="animationDurationInMillis" format="integer" />
+        <attr name="enlightedBackgroundColor"  format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_enlighted_text_color">#FFFFFF</color>
+    <color name="default_accent_color">#FF6D00</color>
+    <color name="default_enlighted_color">#3F51B5</color>
+    <color name="disabled">#DBDBDB</color>
+    <color name="text_shadow">#434343</color>
+    <color name="default_normal_background_color">#FFFFFF</color>
+</resources>

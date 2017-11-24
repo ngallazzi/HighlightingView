@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="layout_size">80dp</dimen>
-    <dimen name="base_padding">8dp</dimen>
-    <dimen name="icon_size">26dp</dimen>
-    <dimen name="progress_bar_size">16dp</dimen>
-</resources>

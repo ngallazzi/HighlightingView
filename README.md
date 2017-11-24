@@ -24,31 +24,39 @@ allprojects {
 ```
 in your layout file (.xml)
 ```groovy
-<com.ngallazzi.enlightinglayout.EnlightingLayout
-	android:id="@+id/myEnlightingLayout"
-	android:layout_width="96dp"
-	android:layout_height="96dp"
-	custom:enlightedColor="#E91E63"
-	custom:normalIcon="@drawable/your_drawable"
-	custom:animationDurationInMillis="1500"
-	custom:text="your_text">
-</com.ngallazzi.enlightinglayout.EnlightingLayout>
+<com.ngallazzi.highlightingview.HighlightingView
+            android:id="@+id/myEnlightingLayoutWithProgress"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="20dp"
+            custom:idleBackgroundColor="#FFFFFF"
+            custom:enlightedBackgroundColor="#FFF300"
+            custom:middleText="Pale"
+            custom:middleTextColor="#F6D10D"
+            custom:icon="@drawable/ic_sun"
+            custom:animationDurationInMillis="1500"
+            custom:bottomText="sun"
+            custom:bottomTextColor="#212121">
+</com.ngallazzi.highlightingview.HighlightingView>
 ```
 # Options
 
- - custom **enlighted color**: "custom:enlightedColor"
- - custom **enlighted text color**: "custom:enlightedTextColor"
- - custom **normal status icon**: "custom:normalIcon"
- - custom **enlighted status icon**: "custom:enlightedIcon"
+ - custom **idle status background color**: "custom:enlightedBackgroundColor"
+ - custom **highlighted status text color**: "custom:enlightedTextColor"
+ - custom **middle text*: "custom:middleText"
+ - custom **middle text color*: "custom:middleTextColor"
+ - custom **icon**: "custom:icon"
  - custom **animation duration**: "custom:animationDurationInMillis"
- - custom **text**: "custom:text"
+ - custom **bottom text**: "custom:bottomText"
+ - custom **bottom text color**: "custom:bottomTextColor"
  
 # Public Methods
 
- - public void setEnlighted (Boolean status)
- - public void setText (String text)
- - public void setImage(Drawable drawable)
- - public boolean isEnlighted()
+ - public void setMiddleText (String text)
+ - public void setBottomText(String text)
+ - public void setIcon(Drawable drawable)
+ - public void setHighlighted(boolean isHighlighted)
+ - public boolean isHighlighted()
  - public void showProgressBar()
  - public void hideProgressBar()
  
