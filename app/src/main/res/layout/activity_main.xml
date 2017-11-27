@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.ngallazzi.highlightingview.HighlightingView
-            android:id="@+id/myEnlightingLayoutK"
+            android:id="@+id/myEnlightingLayout"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_margin="20dp"
@@ -24,10 +24,11 @@
             custom:enlightedBackgroundColor="#4CAF50"
             custom:middleText="Computer"
             custom:middleTextColor="#F44336"
-            custom:icon="@drawable/ic_computer_black_24dp"
+            custom:icon="@drawable/ic_bluetooth_connected"
             custom:animationDurationInMillis="200"
             custom:bottomText="Off"
-            custom:bottomTextColor="#A3000000">
+            custom:bottomTextColor="#A3000000"
+            custom:bottomTextHighlighted="On">
         </com.ngallazzi.highlightingview.HighlightingView>
 
         <com.ngallazzi.highlightingview.HighlightingView
@@ -41,7 +42,8 @@
             custom:middleTextColor="#03A9F4"
             custom:icon="@drawable/ic_ac_unit_black_24dp"
             custom:animationDurationInMillis="1500"
-            custom:bottomText="Off"
+            custom:bottomText="Idle"
+            custom:bottomTextHighlighted="Active"
             custom:bottomTextColor="#212121">
         </com.ngallazzi.highlightingview.HighlightingView>
     </LinearLayout>

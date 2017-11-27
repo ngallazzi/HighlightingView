@@ -14,29 +14,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        myEnlightingLayout = (HighlightingView) findViewById(R.id.myEnlightingLayoutK);
+        myEnlightingLayout = (HighlightingView) findViewById(R.id.myEnlightingLayout);
         myEnlightingLayoutWithProgress = (HighlightingView)
                 findViewById(R.id.myEnlightingLayoutWithProgress);
-        myEnlightingLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (myEnlightingLayout.isHighlighted()){
-                    myEnlightingLayout.setHighlighted(false);
-                    myEnlightingLayout.setBottomText("Off");
-                }else{
-                    myEnlightingLayout.setHighlighted(true);
-                    myEnlightingLayout.setBottomText("On");
-                }
-            }
-        });
         myEnlightingLayoutWithProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (myEnlightingLayoutWithProgress.isHighlighted()){
-                    myEnlightingLayoutWithProgress.setHighlighted(false);
-                    myEnlightingLayoutWithProgress.setBottomText("Off");
-                }else{
+                if (!myEnlightingLayoutWithProgress.isHighlighted()){
                     new DownloadFilesTask().execute();
+                }else{
+                    myEnlightingLayoutWithProgress.setHighlighted(false);
                 }
             }
         });
@@ -62,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Long result) {
             myEnlightingLayoutWithProgress.hideProgressBar();
             myEnlightingLayoutWithProgress.setHighlighted(true);
-            myEnlightingLayoutWithProgress.setBottomText("On");
         }
     }
 }

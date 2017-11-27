@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -17,11 +18,11 @@ import android.widget.TextView;
  * Created by Nicola on 2016-11-08.
  */
 
-public class HighlightingView extends LinearLayout {
+public class HighlightingView extends LinearLayout implements View.OnClickListener {
     private final int DEFAULT_ANIMATION_DURATION = 700;
 
     private Drawable mIconDrawable;
-    private String mBottomText,mMiddleText;
+    private String mBottomText,mBottomTextHighlighted,mMiddleText;
     private int mAnimationDuration;
     private int mIdleBackgroundColor,
             mMiddleTextColor,mBottomTextColor, mHighlightedBackgroundColor;
@@ -46,6 +47,7 @@ public class HighlightingView extends LinearLayout {
             mIconDrawable = a.getDrawable(R.styleable.HighlightingView_icon);
             mMiddleText = a.getString(R.styleable.HighlightingView_middleText);
             mBottomText = a.getString(R.styleable.HighlightingView_bottomText);
+            mBottomTextHighlighted = a.getString(R.styleable.HighlightingView_bottomTextHighlighted);
             mAnimationDuration = a.getInt(R.styleable.HighlightingView_animationDurationInMillis,
                     DEFAULT_ANIMATION_DURATION);
             mIdleBackgroundColor = a.getColor(R.styleable.
@@ -92,6 +94,7 @@ public class HighlightingView extends LinearLayout {
         Drawable[] layers = new Drawable[]{backgroundDrawableNormal,backgroundDrawableHighlighted};
         mTransition = new TransitionDrawable(layers);
         setBackground(mTransition);
+        setOnClickListener(this);
     }
 
 
@@ -101,11 +104,13 @@ public class HighlightingView extends LinearLayout {
             mIconDrawable = Utils.getColoredDrawable(mIconDrawable, Color.WHITE);
             tvMiddleText.setTextColor(Color.WHITE);
             tvBottomText.setTextColor(Color.WHITE);
+            tvBottomText.setText(mBottomTextHighlighted);
         }else{
             mTransition.reverseTransition(mAnimationDuration);
             mIconDrawable = Utils.getColoredDrawable(mIconDrawable, mMiddleTextColor);
             tvMiddleText.setTextColor(mMiddleTextColor);
             tvBottomText.setTextColor(mBottomTextColor);
+            tvBottomText.setText(mBottomText);
         }
         ivTop.setImageDrawable(mIconDrawable);
     }
@@ -143,5 +148,15 @@ public class HighlightingView extends LinearLayout {
     public void setHighlighted(boolean isHighlighted){
         this.isHighlighted = isHighlighted;
         setCurrentStatusView();
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        if (isHighlighted){
+            setHighlighted(false);
+        }else{
+            setHighlighted(true);
+        }
     }
 }
