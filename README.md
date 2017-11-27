@@ -13,7 +13,7 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 
 in your build.gradle (Module)
 ```groovy
-compile 'com.github.ngallazzi:HighlightingView:1.0.1'
+compile 'com.github.ngallazzi:HighlightingView:1.0.2'
 ```
 
 in your build.gradle (Project)
