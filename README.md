@@ -19,11 +19,11 @@ compile 'com.github.ngallazzi:HighlightingView:1.0.1'
 in your build.gradle (Project)
 ```groovy
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
 ```
 in your layout file (.xml)
 ```groovy
