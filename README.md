@@ -1,4 +1,4 @@
-# EnlightingLayout
+# HighlightingView
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
 ![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
@@ -13,24 +13,22 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 
 in your build.gradle (Module)
 ```groovy
-compile 'me.ngallazzi.android.enlightinglayout:enlightinglayout:1.0.0'
+compile 'com.github.ngallazzi:HighlightingView:1.0.1'
 ```
 
 in your build.gradle (Project)
 ```groovy
 allprojects {
-    repositories {
-        jcenter()
-        maven {
-            url  "http://dl.bintray.com/ngallazzi/maven"
-        }
-    }
-}
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 in your layout file (.xml)
 ```groovy
 <com.ngallazzi.highlightingview.HighlightingView
-	android:id="@+id/myEnlightingLayoutK"
+	android:id="@+id/myEnlightingLayout"
 	android:layout_width="150dp"
 	android:layout_height="150dp"
 	android:layout_margin="20dp"
