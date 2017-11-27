@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
+group='com.github.ngallazzi'
 
 android {
     compileSdkVersion 26
@@ -33,83 +34,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
 
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-group = 'me.ngallazzi.android.enlightinglayout'
-version = '1.0.0'
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            name 'Enlighting layout'
-            description 'A simple layout working as a switch on-off button'
-            url 'https://github.com/ngallazzi/EnlightingLayout'
-            inceptionYear '2017'
-
-            packaging 'aar'
-            groupId 'me.ngallazzi.android.enlightinglayout'
-            artifactId 'enlightinglayout'
-            version '1.0.0'
-
-            licenses {
-                license {
-                    name 'The MIT License (MIT)'
-                    url 'https://opensource.org/licenses/MIT'
-                }
-            }
-            scm {
-                connection 'https://github.com/ngallazzi/EnlightingLayout.git'
-                url 'https://github.com/ngallazzi/EnlightingLayout'
-
-            }
-            developers {
-                developer {
-                    id = 'ngallazzi'
-                    name 'Nicola Gallazzi'
-                }
-            }
-        }
-    }
-}
-
-Properties bintrayProperties = new Properties()
-bintrayProperties.load(project.rootProject.file('bintray.properties').newDataInputStream())
-
-bintray {
-    user = bintrayProperties.getProperty('user')
-    key = bintrayProperties.get('key')
-    configurations = ['archives']
-    pkg {
-        repo = 'maven'
-        name = 'enlighting-layout'
-        userOrg = 'ngallazzi'
-        licenses = ['MIT']
-        vcsUrl = 'https://github.com/guardian/piper.git'
-        publish = true
-        version {
-            name = '1.0.0'
-            desc = 'A simple layout working as a switch on-off button'
-            released = new Date()
-            vcsTag = 'v1.0.0'
-        }
-    }
-}
 
