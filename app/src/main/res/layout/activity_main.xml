@@ -21,14 +21,14 @@
             android:layout_height="150dp"
             android:layout_margin="20dp"
             custom:idleBackgroundColor="#FFFFFF"
-            custom:enlightedBackgroundColor="#4CAF50"
+            custom:highlightedBackgroundColor="#4CAF50"
             custom:middleText="Computer"
             custom:middleTextColor="#F44336"
             custom:icon="@drawable/ic_bluetooth_connected"
             custom:animationDurationInMillis="200"
             custom:bottomText="Off"
             custom:bottomTextColor="#A3000000"
-            custom:bottomTextHighlighted="On">
+            custom:highlightedBottomText="On">
         </com.ngallazzi.highlightingview.HighlightingView>
 
         <com.ngallazzi.highlightingview.HighlightingView
@@ -37,13 +37,13 @@
             android:layout_height="120dp"
             android:layout_margin="20dp"
             custom:idleBackgroundColor="#FFFFFF"
-            custom:enlightedBackgroundColor="#03A9F4"
+            custom:highlightedBackgroundColor="#03A9F4"
             custom:middleText="A/C"
             custom:middleTextColor="#03A9F4"
             custom:icon="@drawable/ic_ac_unit_black_24dp"
             custom:animationDurationInMillis="1500"
             custom:bottomText="Idle"
-            custom:bottomTextHighlighted="Active"
+            custom:highlightedBottomText="Active"
             custom:bottomTextColor="#212121">
         </com.ngallazzi.highlightingview.HighlightingView>
     </LinearLayout>

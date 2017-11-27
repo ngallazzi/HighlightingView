@@ -47,14 +47,14 @@ public class HighlightingView extends LinearLayout implements View.OnClickListen
             mIconDrawable = a.getDrawable(R.styleable.HighlightingView_icon);
             mMiddleText = a.getString(R.styleable.HighlightingView_middleText);
             mBottomText = a.getString(R.styleable.HighlightingView_bottomText);
-            mBottomTextHighlighted = a.getString(R.styleable.HighlightingView_bottomTextHighlighted);
+            mBottomTextHighlighted = a.getString(R.styleable.HighlightingView_highlightedBottomText);
             mAnimationDuration = a.getInt(R.styleable.HighlightingView_animationDurationInMillis,
                     DEFAULT_ANIMATION_DURATION);
             mIdleBackgroundColor = a.getColor(R.styleable.
                             HighlightingView_idleBackgroundColor,
                     ContextCompat.getColor(mContext,android.R.color.white));
             mHighlightedBackgroundColor = a.getColor(R.styleable.
-                            HighlightingView_enlightedBackgroundColor
+                            HighlightingView_highlightedBackgroundColor
                     , ContextCompat.getColor(mContext,android.R.color.holo_green_dark));
             mMiddleTextColor = a.getColor(R.styleable.
                             HighlightingView_middleTextColor

@@ -27,35 +27,37 @@ allprojects {
 ```
 in your layout file (.xml)
 ```groovy
-<com.ngallazzi.highlightingview.HighlightingView
-	android:id="@+id/myEnlightingLayout"
-	android:layout_width="150dp"
-	android:layout_height="150dp"
-	android:layout_margin="20dp"
-	custom:idleBackgroundColor="#FFFFFF"
-	custom:enlightedBackgroundColor="#4CAF50"
-	custom:middleText="Computer"
-	custom:middleTextColor="#F44336"
-	custom:icon="@drawable/ic_computer_black_24dp"
-	custom:animationDurationInMillis="200"
-	custom:bottomText="Off"
-	custom:bottomTextColor="#A3000000">
-</com.ngallazzi.highlightingview.HighlightingView>
+	<com.ngallazzi.highlightingview.HighlightingView
+		android:id="@+id/myEnlightingLayout"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_margin="20dp"
+		custom:idleBackgroundColor="#FFFFFF"
+		custom:highlightedBackgroundColor="#4CAF50"
+		custom:middleText="Computer"
+		custom:middleTextColor="#F44336"
+		custom:icon="@drawable/ic_bluetooth_connected"
+		custom:animationDurationInMillis="200"
+		custom:bottomText="Off"
+		custom:bottomTextColor="#A3000000"
+		custom:highlightedBottomText="On">
+	</com.ngallazzi.highlightingview.HighlightingView>
 ```
 # Options
 
- - custom **idle status background color**: "custom:enlightedBackgroundColor"
- - custom **highlighted status text color**: "custom:enlightedTextColor"
+ - custom **idle status background color**: "custom:highlightedBackgroundColor"
+ - custom **highlighted status background color**: "custom:highlightedBackgroundColor"
  - custom **middle text*: "custom:middleText"
  - custom **middle text color*: "custom:middleTextColor"
  - custom **icon**: "custom:icon"
  - custom **animation duration**: "custom:animationDurationInMillis"
  - custom **bottom text**: "custom:bottomText"
  - custom **bottom text color**: "custom:bottomTextColor"
+ - custom **highlighted status bottom text**: "custom:highlightedBottomText"
  
 # Public Methods
 
- - public void setMiddleText (String text)
+ - public void setMiddleText(String text)
  - public void setBottomText(String text)
  - public void setIcon(Drawable drawable)
  - public void setHighlighted(boolean isHighlighted)
