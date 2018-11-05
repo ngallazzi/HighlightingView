@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HighlightingViewSample.iml" filepath="$PROJECT_DIR$/HighlightingViewSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HighlightingView.iml" filepath="$PROJECT_DIR$/HighlightingView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Sviluppo\HighlightingLayout\HighlightingLayout\enlightinglayout.iml" filepath="C:\Sviluppo\HighlightingLayout\HighlightingLayout\enlightinglayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/highlightingView/highlightingView.iml" filepath="$PROJECT_DIR$/highlightingView/highlightingView.iml" />
     </modules>
   </component>
