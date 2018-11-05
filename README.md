@@ -9,7 +9,7 @@ A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH f
 
 in your build.gradle (Module)
 ```groovy
-compile 'com.github.ngallazzi:HighlightingView:1.0.2'
+compile 'com.github.ngallazzi:HighlightingView:1.1.0'
 ```
 
 in your build.gradle (Project)
@@ -24,32 +24,36 @@ allprojects {
 in your layout file (.xml)
 ```groovy
 	<com.ngallazzi.highlightingview.HighlightingView
-		android:id="@+id/myEnlightingLayout"
-		android:layout_width="150dp"
-		android:layout_height="150dp"
-		android:layout_margin="20dp"
-		custom:idleBackgroundColor="#FFFFFF"
-		custom:highlightedBackgroundColor="#4CAF50"
-		custom:middleText="Computer"
-		custom:middleTextColor="#F44336"
-		custom:icon="@drawable/ic_bluetooth_connected"
-		custom:animationDurationInMillis="200"
-		custom:bottomText="Off"
-		custom:bottomTextColor="#A3000000"
-		custom:highlightedBottomText="On">
-	</com.ngallazzi.highlightingview.HighlightingView>
+        android:id="@+id/myEnlightingLayoutWithProgressTwo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        custom:animationDurationInMillis="500"
+        custom:bottomText="Download"
+        custom:bottomTextColor="#ABABAB"
+        custom:highlightedBackgroundColor="#4CAF50"
+        custom:highlightedBottomText="Download completed"
+        custom:highlightedIcon="@drawable/ic_done_black_24dp"
+        custom:idleBackgroundColor="#3F51B5"
+        custom:idleIcon="@drawable/ic_file_download_black_24dp"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/myEnlightingLayout"
+        custom:middleText="image.jpg"
+        custom:middleTextColor="@color/disabled" />
 ```
 # Options
-
- - custom **idle status background color**: "custom:highlightedBackgroundColor"
- - custom **highlighted status background color**: "custom:highlightedBackgroundColor"
- - custom **middle text*: "custom:middleText"
- - custom **middle text color*: "custom:middleTextColor"
- - custom **icon**: "custom:icon"
  - custom **animation duration**: "custom:animationDurationInMillis"
  - custom **bottom text**: "custom:bottomText"
  - custom **bottom text color**: "custom:bottomTextColor"
+ - custom **idle status icon**: "custom:idleIcon"
+ - custom **idle status background color**: "custom:highlightedBackgroundColor"
  - custom **highlighted status bottom text**: "custom:highlightedBottomText"
+ - custom **highlighted status background color**: "custom:highlightedBackgroundColor"
+ - custom **highlighted status icon**: "custom:highlightedIcon"
+ - custom **middle text*: "custom:middleText"
+ - custom **middle text color*: "custom:middleTextColor"
  
 # Public Methods
 
