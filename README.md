@@ -2,7 +2,7 @@
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
 <br>
-![demo gif](https://github.com/ngallazzi/HighlightingView/blob/master/highlighted.gif)
+<img src="https://github.com/ngallazzi/HighlightingView/blob/master/highlighted.gif" width="300" />
 <br>
 
 # Usage
