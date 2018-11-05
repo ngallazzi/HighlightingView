@@ -1,13 +1,9 @@
 # HighlightingView
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
-![Demo video](https://github.com/ngallazzi/HighlightingView/blob/master/demo.mp4)
 <br>
+![](https://github.com/ngallazzi/HighlightingView/blob/master/highlighted.gif)
 <br>
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173501.png)
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173505.png)
-<br>
-![](https://github.com/ngallazzi/HighlightingView/blob/master/Screenshot_20171124-173508.png)
 
 # Usage
 
