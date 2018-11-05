@@ -52,8 +52,8 @@ in your layout file (.xml)
  - custom **highlighted status bottom text**: "custom:highlightedBottomText"
  - custom **highlighted status background color**: "custom:highlightedBackgroundColor"
  - custom **highlighted status icon**: "custom:highlightedIcon"
- - custom **middle text*: "custom:middleText"
- - custom **middle text color*: "custom:middleTextColor"
+ - custom **middle text**: "custom:middleText"
+ - custom **middle text color**: "custom:middleTextColor"
  
 # Public Methods
 
