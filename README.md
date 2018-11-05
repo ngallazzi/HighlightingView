@@ -57,13 +57,13 @@ in your layout file (.xml)
  
 # Public Methods
 
- - public void setMiddleText(String text)
- - public void setBottomText(String text)
- - public void setIcon(Drawable drawable)
- - public void setHighlighted(boolean isHighlighted)
- - public boolean isHighlighted()
- - public void showProgressBar()
- - public void hideProgressBar()
+ - public void **setMiddleText(String text)**
+ - public void **setBottomText(String text)**
+ - public void **setIcon(Drawable drawable)**
+ - public void **setHighlighted(boolean isHighlighted)**
+ - public boolean **isHighlighted()**
+ - public void **showProgressBar()**
+ - public void **hideProgressBar()**
  
  # License
 ```groovy 
