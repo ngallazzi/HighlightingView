@@ -1,3 +1,6 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-HighlightingView-green.svg?style=flat )]( https://android-arsenal.com/details/1/7294 )
+[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=19)
+<br>
 # HighlightingView
 A simple layout working as a switch on-off button - Thanks to DreaminginCodeZH for Material Progress bar
 
